@@ -1,0 +1,97 @@
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+}
+
+.container {
+    overflow: hidden;
+    display: flex;
+    border-radius: 10px;
+}
+
+.cards {
+    padding: 2em;
+    font-family: 'Lexend Deca', sans-serif;
+    width: 200px;
+}
+
+.cards h1 {
+    text-transform: uppercase;
+    color: hsl(0, 0%, 95%);
+    font-family: 'Big Shoulders Display', cursive;
+
+}
+
+.cards p {
+    color: hsla(0, 0%, 100%, 0.75);
+}
+
+.cards button {
+    box-sizing: border-box;
+    font-family: inherit;
+    display: block;
+    padding: 0.8rem 2rem;
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    border: 2px solid hsl(0, 0%, 95%) ;
+    margin-top: 5rem;
+    background-color: hsl(0, 0%, 95%);
+
+}
+
+.Sedans {
+    background-color: hsl(31, 77%, 52%);
+}
+
+.Sedans button {
+    color: hsl(31, 77%, 52%);
+}
+
+.SUVs {
+    background-color: hsl(184, 100%, 22%);
+}
+
+.SUVs button {
+    color: hsl(184, 100%, 22%);
+}
+
+.luxury {
+    background-color: hsl(179, 100%, 13%);
+}
+
+.luxury button {
+    color: hsl(179, 100%, 13%);
+}
+
+/* active state */
+
+.cards button:hover {
+   
+    cursor: pointer;
+    background: none;
+    color: hsla(0, 0%, 100%, 0.75);
+    border: 2px solid hsl(0, 0%, 95%)
+}
+
+@media screen and (max-width: 375px){
+    body{
+        height: auto;
+        padding: 4em 0;
+    }
+    .container {
+        flex-direction: column;
+    }
+    .cards button {
+
+        margin: 2em 0;
+    }
+    .cards {
+        width: 250px;
+      
+    }
+}
