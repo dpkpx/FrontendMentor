@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+:root {
+    --Pale-blue: hsl(225, 100%, 94%); 
+    --Bright-blue: hsl(245, 75%, 52%);
+    --Very-pale-blue: hsl(225, 100%, 98%);
+    --Desaturated-blue: hsl(224, 23%, 55%);
+    --Dark-blue: hsl(223, 47%, 23%);
+    --font-size-paragraph: 16px;
+    --font-family: 'Red Hat Display', sans-serif;
+}
+
+* , ::after,::before{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--Pale-blue);
+    background-image: url(./images/pattern-background-mobile.svg);
+    background-repeat: no-repeat;
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    margin: 0;
+    background-size: contain;
+    @media screen and (min-width:376px) {  
+    background-image: url(./images/pattern-background-desktop.svg);
+       
+     }
+  
+
+    .card{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        width: 325px;
+        background-color: white;
+        border-radius: 1.5rem;
+        overflow: hidden;
+        font-family: var(--font-family);
+        @media screen and (min-width:376px) {  
+           width: 450px;
+        }
+       h1{
+           font-size: 1.5rem;
+           color: var(--Dark-blue);
+           margin: 1.6rem 0 1rem 0 ;
+           padding: 0;
+           font-weight: 900;
+       }
+       p{
+           margin: 0;
+           text-align: center;
+          color: var(--Desaturated-blue);
+          line-height: 1.8;
+        width: 25ch;
+      
+        @media screen and (min-widt:376px) { 
+         width: 28ch;   
+        }
+       }
+
+        .img img{
+            width: 325px;
+            @media screen and (min-width:376px) {  
+                width: 450px;
+             }
+        }
+        .plan{
+            display: flex;
+            align-items: center;
+            position: relative;
+            background-color: var(--Very-pale-blue);
+            height:85px ;
+            width: 275px;
+            border-radius: 10px;
+            margin: 1.8rem 0;
+            @media screen and (min-width:376px) {  
+                width: 350px;
+             }
+            .pricing{
+                color: var(--Desaturated-blue);
+            }
+            .pricing::first-line{
+                color: var(--Dark-blue);
+                font-weight: 700;
+            }
+            &::before{
+                content: "";
+                width: 48px;
+                height: 48px;
+                left: 10px;
+                background-image: url(./images/icon-music.svg);
+                margin: 0 1rem;
+            }
+
+          span{
+              font-size: 14px;
+              font-weight: 700;
+              color: var(--Bright-blue);
+              text-decoration: underline;
+              margin-right: 1rem;
+              margin-left: auto;
+              &:hover{
+              text-decoration: none;
+              color: lighten(hsl(245, 75%, 52%),18%);
+              cursor: pointer;
+              }
+          }
+        }
+
+
+        button:nth-of-type(1){
+            width: 275px;
+            background-color: var(--Bright-blue);
+            border: none;
+            padding: 1rem 3rem;
+            border-radius: 0.7rem;
+            color: #fff;
+            font-weight: 700;
+            font-size: 1rem;
+            box-shadow: 0 1.5rem 25px  hsl(245, 75%, 90%);
+            cursor: pointer;
+
+            &:hover{
+                background-color: lighten(hsl(245, 75%, 52%),18%);
+            }
+            @media screen and (min-width:376px) {  
+                width: 350px;
+             }
+           
+        }
+        button:nth-of-type(2){
+            width: 275px;
+            border: none;
+            color: var(--Desaturated-blue);
+            background: none;
+            font-weight: 700;
+            font-size: 1rem;
+            margin: 1.5rem 0 2.2rem 0;
+
+            &:hover{
+                color: var(--Dark-blue);
+                cursor: pointer;
+            }
+        }
+    }
+}
+

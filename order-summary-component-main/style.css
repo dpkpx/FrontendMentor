@@ -1,0 +1,184 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+:root {
+  --Pale-blue: hsl(225, 100%, 94%);
+  --Bright-blue: hsl(245, 75%, 52%);
+  --Very-pale-blue: hsl(225, 100%, 98%);
+  --Desaturated-blue: hsl(224, 23%, 55%);
+  --Dark-blue: hsl(223, 47%, 23%);
+  --font-size-paragraph: 16px;
+  --font-family: 'Red Hat Display', sans-serif;
+}
+
+*, ::after, ::before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: var(--Pale-blue);
+  background-image: url(./images/pattern-background-mobile.svg);
+  background-repeat: no-repeat;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  margin: 0;
+  background-size: contain;
+}
+
+@media screen and (min-width: 376px) {
+  body {
+    background-image: url(./images/pattern-background-desktop.svg);
+  }
+}
+
+body .card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: auto;
+  width: 325px;
+  background-color: white;
+  border-radius: 1.5rem;
+  overflow: hidden;
+  font-family: var(--font-family);
+}
+
+@media screen and (min-width: 376px) {
+  body .card {
+    width: 450px;
+  }
+}
+
+body .card h1 {
+  font-size: 1.5rem;
+  color: var(--Dark-blue);
+  margin: 1.6rem 0 1rem 0;
+  padding: 0;
+  font-weight: 900;
+}
+
+body .card p {
+  margin: 0;
+  text-align: center;
+  color: var(--Desaturated-blue);
+  line-height: 1.8;
+  width: 25ch;
+}
+
+@media screen and (min-widt: 376px) {
+  body .card p {
+    width: 28ch;
+  }
+}
+
+body .card .img img {
+  width: 325px;
+}
+
+@media screen and (min-width: 376px) {
+  body .card .img img {
+    width: 450px;
+  }
+}
+
+body .card .plan {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  background-color: var(--Very-pale-blue);
+  height: 85px;
+  width: 275px;
+  border-radius: 10px;
+  margin: 1.8rem 0;
+}
+
+@media screen and (min-width: 376px) {
+  body .card .plan {
+    width: 350px;
+  }
+}
+
+body .card .plan .pricing {
+  color: var(--Desaturated-blue);
+}
+
+body .card .plan .pricing::first-line {
+  color: var(--Dark-blue);
+  font-weight: 700;
+}
+
+body .card .plan::before {
+  content: "";
+  width: 48px;
+  height: 48px;
+  left: 10px;
+  background-image: url(./images/icon-music.svg);
+  margin: 0 1rem;
+}
+
+body .card .plan span {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--Bright-blue);
+  text-decoration: underline;
+  margin-right: 1rem;
+  margin-left: auto;
+}
+
+body .card .plan span:hover {
+  text-decoration: none;
+  color: #8379ec;
+  cursor: pointer;
+}
+
+body .card button:nth-of-type(1) {
+  width: 275px;
+  background-color: var(--Bright-blue);
+  border: none;
+  padding: 1rem 3rem;
+  border-radius: 0.7rem;
+  color: #fff;
+  font-weight: 700;
+  font-size: 1rem;
+  -webkit-box-shadow: 0 1.5rem 25px #d6d2f9;
+          box-shadow: 0 1.5rem 25px #d6d2f9;
+  cursor: pointer;
+}
+
+body .card button:nth-of-type(1):hover {
+  background-color: #8379ec;
+}
+
+@media screen and (min-width: 376px) {
+  body .card button:nth-of-type(1) {
+    width: 350px;
+  }
+}
+
+body .card button:nth-of-type(2) {
+  width: 275px;
+  border: none;
+  color: var(--Desaturated-blue);
+  background: none;
+  font-weight: 700;
+  font-size: 1rem;
+  margin: 1.5rem 0 2.2rem 0;
+}
+
+body .card button:nth-of-type(2):hover {
+  color: var(--Dark-blue);
+  cursor: pointer;
+}
+/*# sourceMappingURL=style.css.map */
