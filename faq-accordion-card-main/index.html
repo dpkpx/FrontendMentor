@@ -1,34 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | FAQ Accordion Card</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  
+  <title>FAQ Accordion Card</title>
+
+  <link rel="stylesheet" href="./style.css">
 </head>
+
 <body>
-  How many team members can I invite?
-  You can invite up to 2 additional users on the Free plan. There is no limit on 
-  team members for the Premium plan.
+  <div class="card" role="main">
+    <div class="img">
+      <img src="./images/illustration-box-desktop.svg" alt="illustration">
 
-  What is the maximum file upload size?
-  No more than 2GB. All files in your account must fit your allotted storage space.
+    </div>
 
-  How do I reset my password?
-  Click “Forgot password” from the login page or “Change password” from your profile page.
-  A reset link will be emailed to you.
 
-  Can I cancel my subscription?
-  Yes! Send us a message and we’ll process your request no questions asked.
+    <div class="FAQ">
 
-  Do you provide additional support?
-  Chat and email support is available 24/7. Phone lines are open during normal business hours.
+      <h1>FAQ</h1>
+      <div class="FAQcontainer">
+        <input type="checkbox" id="chek1">
+        <label class="question" for="chek1">How many team members can I invite?</label>
+        <p class="answer">You can invite up to 2 additional users on the Free plan. There is no limit on
+          team members for the Premium plan.</p>
+        <svg width="10" height="7" xmlns="http://www.w3.org/2000/svg">
+          <path d="M1 .799l4 4 4-4" stroke="#F47B56" stroke-width="2" fill="none" fill-rule="evenodd" /></svg>
+      </div>
 
- 
+      <div class="FAQcontainer">
+        <input type="checkbox" checked id="chek2">
+        <label class="question"for="chek2">What is the maximum file upload size?</label>
+        <p class="answer"> No more than 2GB. All files in your account must fit your allotted storage space.</p>
+        <svg width="10" height="7" xmlns="http://www.w3.org/2000/svg">
+          <path d="M1 .799l4 4 4-4" stroke="#F47B56" stroke-width="2" fill="none" fill-rule="evenodd" /></svg>
+      </div>
+
+
+      <div class="FAQcontainer">
+        <input type="checkbox" id="chek3">
+        <label class="question"for="chek3"> How do I reset my password? </label>
+        <p class="answer">Click “Forgot password” from the login page or “Change password” from your profile page.
+          A reset link will be emailed to you.</p>
+        <svg width="10" height="7" xmlns="http://www.w3.org/2000/svg">
+          <path d="M1 .799l4 4 4-4" stroke="#F47B56" stroke-width="2" fill="none" fill-rule="evenodd" /></svg>
+      </div>
+
+      <div class="FAQcontainer">
+        <input type="checkbox" id="chek4">
+        <label class="question"for="chek4">
+          Can I cancel my subscription?</label>
+        <p class="answer">Yes! Send us a message and we’ll process your request no questions asked.</p>
+        <svg width="10" height="7" xmlns="http://www.w3.org/2000/svg">
+          <path d="M1 .799l4 4 4-4" stroke="#F47B56" stroke-width="2" fill="none" fill-rule="evenodd" /></svg>
+      </div>
+
+      <div class="FAQcontainer">
+        <input type="checkbox" id="chek5">
+        <label class="question"for="chek5">Do you provide additional support?</label>
+        <p class="answer">Chat and email support is available 24/7. Phone lines are open during normal business hours.
+        </p>
+        <svg width="10" height="7" xmlns="http://www.w3.org/2000/svg">
+          <path d="M1 .799l4 4 4-4" stroke="#F47B56" stroke-width="2" fill="none" fill-rule="evenodd" /></svg>
+      </div>
+
+
+    </div>
+
+
+
+  </div>
+
 </body>
+
 </html>
