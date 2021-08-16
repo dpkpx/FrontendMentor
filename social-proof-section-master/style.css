@@ -149,7 +149,7 @@ main .ratings .rating {
             flex-direction: row;
     width: 40ch;
     font-size: 15px;
-    padding: 1.2rem 2rem;
+    padding: 1.4rem 2rem;
   }
   main .ratings .rating:first-child {
     margin-right: 100px;
