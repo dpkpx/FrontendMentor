@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&display=swap');
+
+:root {
+    --Very-Dark-Magenta: hsl(300, 43%, 22%);
+    --Soft-Pink: hsl(333, 80%, 67%);
+    --Dark-Grayish-Magenta: hsl(303, 10%, 53%);
+    --Light-Grayish-Magenta: hsl(300, 24%, 96%);
+    --White: hsl(0, 0%, 100%);
+
+}
+
+
+*,
+::after,
+::before {
+    box-sizing: border-box;
+    font-family: 'Spartan', sans-serif;
+
+}
+
+body {
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+    background-image: url(./images/bg-pattern-top-mobile.svg), url(./images/bg-pattern-bottom-mobile.svg);
+
+    background-repeat: no-repeat, no-repeat;
+    background-position: top left, bottom right;
+
+    @media screen and (min-width:376px) {
+        background-image: url(./images/bg-pattern-top-desktop.svg), url(./images/bg-pattern-bottom-desktop.svg);
+    }
+}
+
+main {
+    margin: auto auto auto auto;
+    display: grid;
+    place-items: center;
+    font-size: 15px;
+
+    max-width: 1200px;
+
+
+    @media screen and (min-width:376px) {
+        grid-template-columns: repeat(10, 1fr);
+        row-gap: 3rem;
+    }
+
+    .text {
+
+        h1 {
+            color: var(--Very-Dark-Magenta);
+            text-align: center;
+            width: 12ch;
+            font-weight: 700;
+            line-height: 1;
+            margin-bottom: 2rem;
+        }
+
+        p {
+            color: var(--Dark-Grayish-Magenta);
+            text-align: center;
+            width: 27.5ch;
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 1.8;
+            margin-bottom: 1.2rem;
+
+        }
+
+        @media screen and (min-width:376px) {
+            grid-column: 1/6;
+            justify-self: start;
+
+            h1 {
+                font-size: 3rem;
+                text-align: left;
+                margin-bottom: 0;
+            }
+
+            p {
+                text-align: left;
+                font-size: 15px;
+            }
+        }
+    }
+
+    .ratings {
+        @media screen and (min-width:376px) {
+            grid-column: 6/11;
+            justify-self: center;
+            align-self: start;
+            margin-top: 1.7rem;
+
+        }
+
+        margin-bottom: 1rem;
+
+        .rating {
+            display: flex;
+            background-color: var(--Light-Grayish-Magenta);
+            flex-direction: column;
+            align-items: center;
+            gap: 1rem;
+            width: 325px;
+            padding: 1rem 2rem;
+            margin: 1rem 0;
+            border-radius: .5rem;
+            color: var(--Very-Dark-Magenta);
+            font-weight: 700;
+            font-size: 13px;
+
+            @media screen and (min-width:376px) {
+                flex-direction: row;
+                width: 40ch;
+
+                &:first-child {
+                    transform: translate(-50px);
+                }
+
+                &:last-child {
+                    transform: translate(50px);
+                }
+            }
+
+            &::before {
+                content: " ";
+                width: 100px;
+                height: 16px;
+                background-image: url(./images/icon-star.svg);
+                background-repeat: space;
+            }
+
+        }
+
+
+    }
+}
+
+.cards {
+    @media screen and (min-width:376px) {
+        width: 100%;
+        display: flex;
+        // justify-content: space-between ;
+        column-gap: 2rem;
+        grid-column: 1/11;
+        grid-row: 2/3;
+
+    }
+}
+
+.card {
+    width: 325px;
+    background-color: var(--Very-Dark-Magenta);
+    margin: 1rem 0;
+    height: 250px;
+    border-radius: 0.5rem;
+    padding: 2rem;
+    overflow: hidden;
+
+    .head {
+        display: flex;
+        height: 30%;
+        gap: 1.6rem;
+        align-items: center;
+        margin-bottom: 1.5rem;
+
+        img {
+            border-radius: 50%;
+            width: 42px;
+            height: 42px;
+
+        }
+
+        .verified {
+            h2 {
+                color: var(--White);
+                font-size: 14px;
+                margin: 0;
+                line-height: 1.8;
+            }
+
+            span {
+                color: var(--Soft-Pink);
+                font-size: 14px;
+            }
+        }
+    }
+
+
+    p {
+        color: var(--Light-Grayish-Magenta);
+        line-height: 1.7;
+        font-size: 13px;
+        width: 24.5ch;
+        //  font-weight: ;
+    }
+
+    &:first-child {
+        transform: translateY(-15px);
+    }
+
+    &:last-child {
+        transform: translateY(15px);
+    }
+}
