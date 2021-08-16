@@ -26,7 +26,7 @@ body {
   background-position: top left, bottom right;
 }
 
-@media screen and (min-width: 376px) {
+@media screen and (min-width: 800px) {
   body {
     background-image: url(./images/bg-pattern-top-desktop.svg), url(./images/bg-pattern-bottom-desktop.svg);
     height: 100vh;
@@ -43,7 +43,7 @@ main {
   margin: 4rem 0;
 }
 
-@media screen and (min-width: 376px) {
+@media screen and (min-width: 800px) {
   main {
     -ms-grid-columns: (1fr)[10];
         grid-template-columns: repeat(10, 1fr);
@@ -71,7 +71,7 @@ main .text p {
   margin-bottom: 1.2rem;
 }
 
-@media screen and (min-width: 376px) {
+@media screen and (min-width: 800px) {
   main .text {
     -ms-grid-column: 1;
     -ms-grid-column-span: 5;
@@ -96,7 +96,7 @@ main .ratings {
   margin-bottom: 1rem;
 }
 
-@media screen and (min-width: 376px) {
+@media screen and (min-width: 800px) {
   main .ratings {
     -ms-grid-column: 6;
     -ms-grid-column-span: 5;
@@ -141,7 +141,7 @@ main .ratings .rating {
   font-size: 13px;
 }
 
-@media screen and (min-width: 376px) {
+@media screen and (min-width: 800px) {
   main .ratings .rating {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -167,7 +167,7 @@ main .ratings .rating::before {
   background-repeat: space;
 }
 
-@media screen and (min-width: 376px) {
+@media screen and (min-width: 800px) {
   .cards {
     width: 100%;
     display: -webkit-box;
@@ -241,9 +241,10 @@ main .ratings .rating::before {
           transform: translateY(15px);
 }
 
-@media screen and (min-width: 376px) {
+@media screen and (min-width: 800px) {
   .card {
     width: 365px;
+    min-width: 365px;
   }
   .card p {
     font-size: 14px;

@@ -28,7 +28,7 @@ body {
     background-repeat: no-repeat, no-repeat;
     background-position: top left, bottom right;
 
-    @media screen and (min-width:376px) {
+    @media screen and (min-width:800px) {
         background-image: url(./images/bg-pattern-top-desktop.svg), url(./images/bg-pattern-bottom-desktop.svg);
         height: 100vh;
     }
@@ -42,7 +42,7 @@ main {
     max-width: 1200px;
     margin: 4rem 0;
 
-    @media screen and (min-width:376px) {
+    @media screen and (min-width:800px) {
         grid-template-columns: repeat(10, 1fr);
         row-gap: 3rem;
         margin: 0;
@@ -70,7 +70,7 @@ main {
 
         }
 
-        @media screen and (min-width:376px) {
+        @media screen and (min-width:800px) {
             grid-column: 1/6;
             justify-self: start;
 
@@ -90,7 +90,7 @@ main {
     }
 
     .ratings {
-        @media screen and (min-width:376px) {
+        @media screen and (min-width:800px) {
             grid-column: 6/11;
             justify-self: center;
             align-self: start;
@@ -118,7 +118,7 @@ main {
             font-weight: 700;
             font-size: 13px;
 
-            @media screen and (min-width:376px) {
+            @media screen and (min-width:800px) {
                 flex-direction: row;
                 width: 40ch;
                 font-size: 15px;
@@ -149,7 +149,7 @@ main {
 }
 
 .cards {
-    @media screen and (min-width:376px) {
+    @media screen and (min-width:800px) {
         width: 100%;
         display: flex;
         // justify-content: space-between ;
@@ -216,8 +216,9 @@ main {
     }
 
 
-    @media screen and (min-width:376px) {
+    @media screen and (min-width:800px) {
      width: 365px;
+     min-width: 365px;
      p{
          font-size: 14px;
          width: 26.738343ch;
