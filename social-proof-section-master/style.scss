@@ -21,7 +21,6 @@
 body {
     display: grid;
     place-items: center;
-    height: 100vh;
     padding: 0;
     margin: 0;
     background-image: url(./images/bg-pattern-top-mobile.svg), url(./images/bg-pattern-bottom-mobile.svg);
@@ -31,6 +30,7 @@ body {
 
     @media screen and (min-width:376px) {
         background-image: url(./images/bg-pattern-top-desktop.svg), url(./images/bg-pattern-bottom-desktop.svg);
+        height: 100vh;
     }
 }
 
@@ -39,13 +39,13 @@ main {
     display: grid;
     place-items: center;
     font-size: 15px;
-
     max-width: 1200px;
-
+    margin: 4rem 0;
 
     @media screen and (min-width:376px) {
         grid-template-columns: repeat(10, 1fr);
         row-gap: 3rem;
+        margin: 0;
     }
 
     .text {
@@ -78,11 +78,13 @@ main {
                 font-size: 3rem;
                 text-align: left;
                 margin-bottom: 0;
+                margin-top: 4rem;
             }
 
             p {
                 text-align: left;
                 font-size: 15px;
+                width: 37ch;
             }
         }
     }
@@ -92,7 +94,11 @@ main {
             grid-column: 6/11;
             justify-self: center;
             align-self: start;
-            margin-top: 1.7rem;
+            margin-top: 3.7rem;
+            display: flex;
+            flex-direction: column;
+           width: 100%;
+           align-items: flex-end;
 
         }
 
@@ -115,14 +121,17 @@ main {
             @media screen and (min-width:376px) {
                 flex-direction: row;
                 width: 40ch;
+                font-size: 15px;
+            padding: 1.2rem 2rem;
+
 
                 &:first-child {
-                    transform: translate(-50px);
+                   margin-right: 100px;
                 }
-
-                &:last-child {
-                    transform: translate(50px);
+                &:nth-of-type(2){
+                    margin: 0 50px 0 0;
                 }
+              
             }
 
             &::before {
@@ -204,5 +213,15 @@ main {
 
     &:last-child {
         transform: translateY(15px);
+    }
+
+
+    @media screen and (min-width:376px) {
+     width: 365px;
+     p{
+         font-size: 14px;
+         width: 26.738343ch;
+     }
+
     }
 }

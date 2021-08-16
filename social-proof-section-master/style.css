@@ -19,7 +19,6 @@ body {
   display: -ms-grid;
   display: grid;
   place-items: center;
-  height: 100vh;
   padding: 0;
   margin: 0;
   background-image: url(./images/bg-pattern-top-mobile.svg), url(./images/bg-pattern-bottom-mobile.svg);
@@ -30,6 +29,7 @@ body {
 @media screen and (min-width: 376px) {
   body {
     background-image: url(./images/bg-pattern-top-desktop.svg), url(./images/bg-pattern-bottom-desktop.svg);
+    height: 100vh;
   }
 }
 
@@ -40,6 +40,7 @@ main {
   place-items: center;
   font-size: 15px;
   max-width: 1200px;
+  margin: 4rem 0;
 }
 
 @media screen and (min-width: 376px) {
@@ -47,6 +48,7 @@ main {
     -ms-grid-columns: (1fr)[10];
         grid-template-columns: repeat(10, 1fr);
     row-gap: 3rem;
+    margin: 0;
   }
 }
 
@@ -81,10 +83,12 @@ main .text p {
     font-size: 3rem;
     text-align: left;
     margin-bottom: 0;
+    margin-top: 4rem;
   }
   main .text p {
     text-align: left;
     font-size: 15px;
+    width: 37ch;
   }
 }
 
@@ -97,12 +101,21 @@ main .ratings {
     -ms-grid-column: 6;
     -ms-grid-column-span: 5;
     grid-column: 6/11;
-    -ms-grid-column-align: center;
-        justify-self: center;
+    justify-self: center;
     -ms-flex-item-align: start;
-        -ms-grid-row-align: start;
         align-self: start;
-    margin-top: 1.7rem;
+    margin-top: 3.7rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
   }
 }
 
@@ -135,14 +148,14 @@ main .ratings .rating {
         -ms-flex-direction: row;
             flex-direction: row;
     width: 40ch;
+    font-size: 15px;
+    padding: 1.2rem 2rem;
   }
   main .ratings .rating:first-child {
-    -webkit-transform: translate(-50px);
-            transform: translate(-50px);
+    margin-right: 100px;
   }
-  main .ratings .rating:last-child {
-    -webkit-transform: translate(50px);
-            transform: translate(50px);
+  main .ratings .rating:nth-of-type(2) {
+    margin: 0 50px 0 0;
   }
 }
 
@@ -226,4 +239,14 @@ main .ratings .rating::before {
 .card:last-child {
   -webkit-transform: translateY(15px);
           transform: translateY(15px);
+}
+
+@media screen and (min-width: 376px) {
+  .card {
+    width: 365px;
+  }
+  .card p {
+    font-size: 14px;
+    width: 26.738343ch;
+  }
 }
