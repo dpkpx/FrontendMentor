@@ -8,7 +8,7 @@ body {
   display: -ms-grid;
   display: grid;
   place-items: center;
-  height: 100vh;
+  min-height: 100vh;
   margin: 0;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#af67e9), to(#6565e7));
   background-image: linear-gradient(to bottom, #af67e9, #6565e7);
@@ -35,7 +35,7 @@ body .card .img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-image: url(./images/bg-pattern-desktop.svg), url(./images/illustration-woman-online-desktop.svg);
+  background-image: url(../../images/bg-pattern-desktop.svg), url(../../images/illustration-woman-online-desktop.svg);
   background-position: left -610px top -300px, left -75px center;
   background-size: 220%, contain;
   background-repeat: no-repeat, no-repeat;
@@ -107,10 +107,9 @@ body .card .FAQ .FAQcontainer svg {
   right: 0;
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 700px) {
   body {
     min-height: 100vh;
-    height: auto;
   }
   body .card {
     -webkit-box-orient: vertical;
@@ -128,7 +127,7 @@ body .card .FAQ .FAQcontainer svg {
     display: flex;
     width: 325px;
     height: 110px;
-    background-image: url(./images/bg-pattern-mobile.svg);
+    background-image: url(../../images/bg-pattern-mobile.svg);
     background-position: top center;
     background-size: 73%;
     background-repeat: no-repeat;
@@ -138,7 +137,7 @@ body .card .FAQ .FAQcontainer svg {
     width: 266px;
     height: 196px;
     position: absolute;
-    background-image: url(./images/illustration-woman-online-mobile.svg);
+    background-image: url(../../images/illustration-woman-online-mobile.svg);
     top: -107px;
     left: 13px;
   }
