@@ -1,9 +1,13 @@
+
+*{
+    box-sizing: border-box;
+}
+
 body {
     margin: 0;
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     align-items: center;
-    justify-content: center;
     font-size: 15px;
 }
 
@@ -11,12 +15,14 @@ body {
     overflow: hidden;
     display: flex;
     border-radius: 10px;
+    margin: auto;
 }
 
 .cards {
-    padding: 2em;
+    padding: 2rem;
     font-family: 'Lexend Deca', sans-serif;
-    width: 200px;
+    width: 325px;
+    
 }
 
 .cards h1 {
@@ -78,20 +84,21 @@ body {
     border: 2px solid hsl(0, 0%, 95%)
 }
 
-@media screen and (max-width: 375px){
+@media screen and (max-width: 800px){
     body{
-        height: auto;
-        padding: 4em 0;
+       
     }
     .container {
         flex-direction: column;
+        min-width: 325px;
+        margin: 2rem auto;
     }
     .cards button {
 
-        margin: 2em 0;
+        margin: 2rem 0;
     }
     .cards {
-        width: 250px;
+      
       
     }
 }
