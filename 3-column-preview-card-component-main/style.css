@@ -85,9 +85,6 @@ body {
 }
 
 @media screen and (max-width: 800px){
-    body{
-       
-    }
     .container {
         flex-direction: column;
         min-width: 325px;
@@ -96,9 +93,5 @@ body {
     .cards button {
 
         margin: 2rem 0;
-    }
-    .cards {
-      
-      
     }
 }
