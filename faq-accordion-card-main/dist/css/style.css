@@ -18,7 +18,7 @@ body .card {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  min-width: 900px;
+  width: 900px;
   height: 500px;
   background-color: #fff;
   border-radius: 20px;
@@ -117,6 +117,7 @@ body .card .FAQ .FAQcontainer svg {
         -ms-flex-direction: column;
             flex-direction: column;
     width: 325px;
+    min-width: 325px;
     margin: 145px 25px;
     height: auto;
     padding-bottom: 40px;
