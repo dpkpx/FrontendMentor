@@ -6,20 +6,18 @@
     width: rem(325);
     background-color: white;
     border-radius: rem(12);
-    // overflow: hidden;
     position: relative;
 
     @include breakpoint(medium) {
         display: flex;
         width: rem(900);
-    // overflow: visible;
 
     }
 
     &__top {
         width: rem(325);
         height: rem(200);
-        background-image: url(../../../images/drawers.jpg);
+        background-image: url(../images/drawers.jpg);
         background-size: cover;
         background-repeat: no-repeat;
         background-position: left top -15px;

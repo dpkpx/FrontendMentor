@@ -58,7 +58,7 @@ a, a:visited, a:active {
 .card__top {
   width: 20.3125rem;
   height: 12.5rem;
-  background-image: url(../../../images/drawers.jpg);
+  background-image: url(../images/drawers.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: left top -15px;
