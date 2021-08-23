@@ -1,0 +1,173 @@
+@use '../util'as *;
+@use '../globals'as *;
+
+
+.card {
+    width: rem(325);
+    background-color: white;
+    border-radius: rem(12);
+    // overflow: hidden;
+    position: relative;
+
+    @include breakpoint(medium) {
+        display: flex;
+        width: rem(900);
+    // overflow: visible;
+
+    }
+
+    &__top {
+        width: rem(325);
+        height: rem(200);
+        background-image: url(../../../images/drawers.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: left top -15px;
+       border-top-left-radius: rem(12) ;
+       border-top-right-radius:rem(12);
+       border-bottom-left-radius: 0 ;
+
+
+        @include breakpoint(medium) {
+       border-top-right-radius:0;
+       border-bottom-left-radius: rem(12) ;
+       
+            width: 40%;
+            height: 350px;
+            background-position: left top;
+
+        }
+    }
+
+    &__bottom {
+        padding: rem(35) rem(27) rem(20) rem(27);
+
+        @include breakpoint(medium) {
+            padding: 2rem 3rem;
+            width: 60%;
+        }
+
+        & h1 {
+            font-size: rem(17);
+            color: var(--Very-Dark-Grayish-Blue);
+            font-weight: 700;
+
+            @include breakpoint(medium) {
+                font-size: 1.6rem;
+                width: 26ch;
+
+            }
+
+        }
+
+        & p {
+            width: 31.5ch;
+            line-height: 1.6;
+            font-size: rem(13);
+            color: var(--Desaturated-Dark-Blue);
+
+            @include breakpoint(medium) {
+                font-size: rem(16);
+
+                width: 45ch;
+
+            }
+        }
+
+        &__about {
+            margin-top: rem(30);
+            display: flex;
+            align-items: center;
+
+            img {
+                width: rem(48);
+                height: rem(48);
+                border-radius: 50%;
+            }
+
+            &--name {
+                margin-left: rem(16);
+
+                h3 {
+                    margin-bottom: rem(0);
+                    font-size: rem(14);
+                    color: var(--Very-Dark-Grayish-Blue);
+                    font-weight: 700;
+                }
+
+                span {
+                    color: var(--Grayish-Blue);
+                    font-size: rem(14);
+
+                }
+            }
+
+            &__share {
+                display: grid;
+                place-items: center;
+                margin-left: auto;
+                width: rem(35);
+                height: rem(35);
+                border-radius: 50%;
+                background-color: var(--Light-Grayish-Blue);
+                cursor: pointer;
+                outline: none;
+
+                &--active {
+                    background-color: var(--Desaturated-Dark-Blue);
+
+                    & svg path {
+
+                        fill: white
+                    }
+                }
+            }
+        }
+    }
+
+    &--active {
+        bottom: 0;
+        display: none;
+        position: relative;
+        align-items: center;
+        padding: rem(16) rem(27) rem(16) rem(27);
+        gap: 1rem;
+        background-color: var(--Very-Dark-Grayish-Blue);
+        width: 100%;
+        border-radius: 0 0 rem(12) rem(12);
+      
+        @include breakpoint(medium) {
+          
+            width: max-content;
+            bottom: 7rem;
+            right: 4.5rem;
+            border-radius: rem(10);
+            transform: translate(50%);
+
+
+            &::before{
+                content: "";
+                position: absolute;
+                width: rem(40);
+                height: rem(40);
+                z-index: -1;
+                background-color: var(--Very-Dark-Grayish-Blue);
+                left: 50%;
+                transform: rotate(45deg) translateY(20px);
+            }
+
+        }
+
+        span {
+            font-size: rem(13);
+            letter-spacing: rem(5);
+            color: var(--Grayish-Blue);
+        }
+
+        & .card__bottom__about__share {
+            @include breakpoint(medium) {
+                display: none;
+            }
+        }
+    }
+}

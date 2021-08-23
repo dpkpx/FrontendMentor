@@ -1,0 +1,27 @@
+@use '../util'as *;
+
+
+
+html {
+    font-size: 100%;
+    box-sizing: border-box;
+    @include breakpoint(medium){
+        min-width: rem(1000);
+    }
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    display: grid;
+    place-content: center;
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-Manrope);
+    min-height: 100vh;
+    background-color: var(--Light-Grayish-Blue);
+}
