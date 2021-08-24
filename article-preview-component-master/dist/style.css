@@ -120,7 +120,7 @@ a, a:visited, a:active {
 .card__bottom__about--name {
   margin-left: 1rem;
 }
-.card__bottom__about--name h3 {
+.card__bottom__about--name h2 {
   margin-bottom: 0rem;
   font-size: 0.875rem;
   color: var(--Very-Dark-Grayish-Blue);
