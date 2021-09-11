@@ -1,0 +1,49 @@
+@use '../util'as *;
+
+
+
+html {
+    font-size: 100%;
+    box-sizing: border-box;
+    @include breakpoint(medium){
+    min-width: 1100px;   
+    }
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    background-color: var(--Very-Light-Gray);
+   }
+
+main{
+    margin: 0 auto;
+    margin-bottom: 2em;
+    display: grid;
+    grid-template-areas:
+        "header"
+        "supervisor"
+        "team"
+        "karma"
+        "calculator";
+    gap: 2em;
+    justify-items: center;
+    font-family: var(--font-poppins);
+    @include breakpoint(medium){
+        grid-template-areas:
+        "header header header"
+        ". team ."
+        "supervisor team calculator"
+        "supervisor karma calculator"
+        ". karma .";
+        width: 1100px;
+    }
+
+}
