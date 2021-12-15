@@ -16,15 +16,16 @@
 
 body{
     background-color: var(--Pale-blue);
-    background-image: url(./images/pattern-background-mobile.svg);
+    background-image: url(../../images/pattern-background-mobile.svg);
     background-repeat: no-repeat;
     display: grid;
     place-items: center;
-    height: 100vh;
+    min-height: 100vh;
+    min-width: max-content;
     margin: 0;
     background-size: contain;
-    @media screen and (min-width:376px) {  
-    background-image: url(./images/pattern-background-desktop.svg);
+    @media screen and (min-width:1025px) {  
+    background-image: url(../../images/pattern-background-desktop.svg);
        
      }
   
@@ -39,13 +40,13 @@ body{
         border-radius: 1.5rem;
         overflow: hidden;
         font-family: var(--font-family);
-        @media screen and (min-width:376px) {  
+        @media screen and (min-width:1025px) {  
            width: 450px;
         }
        h1{
            font-size: 1.5rem;
            color: var(--Dark-blue);
-           margin: 1.6rem 0 1rem 0 ;
+           margin: 1.2rem 0 1rem 0 ;
            padding: 0;
            font-weight: 900;
        }
@@ -53,17 +54,17 @@ body{
            margin: 0;
            text-align: center;
           color: var(--Desaturated-blue);
-          line-height: 1.8;
+          line-height: 1.4;
         width: 25ch;
       
-        @media screen and (min-widt:376px) { 
+        @media screen and (min-widt:1025px) { 
          width: 28ch;   
         }
        }
 
         .img img{
             width: 325px;
-            @media screen and (min-width:376px) {  
+            @media screen and (min-width:1025px) {  
                 width: 450px;
              }
         }
@@ -75,8 +76,8 @@ body{
             height:85px ;
             width: 275px;
             border-radius: 10px;
-            margin: 1.8rem 0;
-            @media screen and (min-width:376px) {  
+            margin: 1.2rem 0;
+            @media screen and (min-width:1025px) {  
                 width: 350px;
              }
             .pricing{
@@ -91,7 +92,7 @@ body{
                 width: 48px;
                 height: 48px;
                 left: 10px;
-                background-image: url(./images/icon-music.svg);
+                background-image: url(../../images/icon-music.svg);
                 margin: 0 1rem;
             }
 
@@ -126,7 +127,7 @@ body{
             &:hover{
                 background-color: lighten(hsl(245, 75%, 52%),18%);
             }
-            @media screen and (min-width:376px) {  
+            @media screen and (min-width:1025px) {  
                 width: 350px;
              }
            
