@@ -74,7 +74,7 @@ body .card .FAQ .FAQcontainer input:checked ~ .answer {
   display: block;
 }
 
-body .card .FAQ .FAQcontainer input:checked ~ svg {
+body .card .FAQ .FAQcontainer input:checked ~ label > svg {
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
 }
@@ -103,7 +103,7 @@ body .card .FAQ .FAQcontainer .answer {
 
 body .card .FAQ .FAQcontainer svg {
   position: absolute;
-  top: 23px;
+  top: 25px;
   right: 0;
 }
 
