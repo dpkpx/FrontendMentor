@@ -1,2 +1,2 @@
-"use strict";function active(e){var o=document.querySelector(".card--active").style;o.display="flex",o.position="absolute"}console.log("hello");
+"use strict";var style=document.querySelector(".card--active").style;document.querySelector(".card__bottom__about__share").addEventListener("focusin",(function(){style.display="flex",document.querySelector(".card__bottom__about__share").addEventListener("focusout",(function(){style.display="none"}),{once:!0})}));
 //# sourceMappingURL=script.js.map

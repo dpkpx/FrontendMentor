@@ -126,7 +126,7 @@
     &--active {
         bottom: 0;
         display: none;
-        position: relative;
+        position: absolute;
         align-items: center;
         padding: rem(16) rem(27) rem(16) rem(27);
         gap: 1rem;

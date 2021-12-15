@@ -1,0 +1,42 @@
+:root {
+  --desaturated-red: hsl(0, 36%, 70%);
+  --soft-red: hsl(0, 93%, 68%);
+  --dark-grayish-red: hsl(0, 6%, 24%);
+  --linear-gradient1:linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
+  --Linear-gradient2:linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+}
+
+:root {
+  --font-josefin: "Josefin Sans", sans-serif;
+}
+
+html {
+  font-size: 100%;
+  box-sizing: border-box;
+}
+@media (min-width: 40em) {
+  html {
+    min-width: 1100px;
+  }
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}
+
+h1, h2, h3 {
+  margin: 0;
+}
+
+a, a:visited, a:active {
+  text-decoration: none;
+}
+/*# sourceMappingURL=style.css.map */

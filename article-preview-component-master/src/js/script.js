@@ -1,9 +1,11 @@
 
-console.log('hello')
+const style = document.querySelector('.card--active').style;
 
-function active(object){
- 
-    const style = document.querySelector('.card--active').style;
-    style.display="flex";
-    style.position="absolute";
-}
+document.querySelector(".card__bottom__about__share").addEventListener("focusin", () => {
+    style.display = "flex";
+
+
+    document.querySelector(".card__bottom__about__share").addEventListener("focusout", () => {
+        style.display = "none";
+    },{once:true})
+})

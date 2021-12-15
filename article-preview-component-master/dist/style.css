@@ -150,7 +150,7 @@ a, a:visited, a:active {
 .card--active {
   bottom: 0;
   display: none;
-  position: relative;
+  position: absolute;
   align-items: center;
   padding: 1rem 1.6875rem 1rem 1.6875rem;
   gap: 1rem;
