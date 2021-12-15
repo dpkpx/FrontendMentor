@@ -189,4 +189,7 @@ a, a:visited, a:active {
     display: none;
   }
 }
+.card--active svg {
+  cursor: pointer;
+}
 /*# sourceMappingURL=style.css.map */
