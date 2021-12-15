@@ -23,13 +23,13 @@ body {
     place-items: center;
     padding: 0;
     margin: 0;
-    background-image: url(./images/bg-pattern-top-mobile.svg), url(./images/bg-pattern-bottom-mobile.svg);
+    background-image: url(../../images/bg-pattern-top-mobile.svg), url(../../images/bg-pattern-bottom-mobile.svg);
    
     background-repeat: no-repeat, no-repeat;
     background-position: top left, bottom right;
 
     @media screen and (min-width:700px) {
-        background-image: url(./images/bg-pattern-top-desktop.svg), url(./images/bg-pattern-bottom-desktop.svg);
+        background-image: url(../../images/bg-pattern-top-desktop.svg), url(../../images/bg-pattern-bottom-desktop.svg);
         height: 100vh;
         min-width: 1200px;
     }
@@ -45,7 +45,7 @@ main {
 
     @media screen and (min-width:700px) {
         grid-template-columns: repeat(10, 1fr);
-        row-gap: 3rem;
+        row-gap: 1rem;
         margin: 0;
     }
 
@@ -139,7 +139,7 @@ main {
                 content: " ";
                 width: 100px;
                 height: 16px;
-                background-image: url(./images/icon-star.svg);
+                background-image: url(../../images/icon-star.svg);
                 background-repeat: space;
             }
 
